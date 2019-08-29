@@ -17,6 +17,10 @@ The Application directory contains following directories:
 * bin: The PowerShell GUI script
 * VSProject: The Visual Studio solution, containing the WPF project with the XAML code for the PowerShell GUI script
 
+> **Important**  
+>  
+> Don't forget to update the URL to the data file in the EndpointManager.ps1 file!
+
 ### data
 
 This folder contains the data file, used as external data for the PowerShell GUI script. Obviously, this should be in a separate repository in your Azure DevOps project to separate it from the code. But since this is not possible in GitHub, I added it to a different folder.
