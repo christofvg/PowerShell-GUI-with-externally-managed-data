@@ -1,0 +1,51 @@
+﻿<Window x:Name="frmManager" x:Class="Endpoint_Manager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Endpoint_Manager"
+        mc:Ignorable="d"
+        Title="Endpoint Manager" Height="478" Width="510.4" ResizeMode="NoResize">
+    <Grid Margin="0,0,0,-0.2">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TabControl x:Name="tabManage" Margin="10,75,10,8">
+            <TabItem x:Name="tabItemSysInfo" Header="System Information">
+                <Grid Background="#FFE5E5E5" Margin="0,0,-0.4,0.8">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock x:Name="txtSysInfo" Margin="10,54,10.6,9.8" TextWrapping="Wrap" Text="txtSysInfo"/>
+                    <TextBlock x:Name="txtHostInfo" HorizontalAlignment="Left" Margin="10,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="42" Width="459" Text="txtSysInfo" FontWeight="Bold"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="tabItemPrinters" Header="Printers">
+                <Grid x:Name="txtLocation" Background="#FFE5E5E5" Margin="0,0,-0.4,0.8">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="btnMap" Content="Add printer" HorizontalAlignment="Left" Margin="168,231,0,0" VerticalAlignment="Top" Width="140" Height="38"/>
+                    <Button x:Name="btnMapDefault" Content="Add printer as default" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="317,231,0,0" VerticalAlignment="Top" Width="140" Height="38"/>
+                    <ListBox x:Name="lstPrinters" HorizontalAlignment="Left" Height="186" Margin="23,28,0,0" VerticalAlignment="Top" Width="434"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Drives">
+                <Grid Background="#FFE5E5E5" Margin="0,0,-0.4,0.8">
+                    <Button x:Name="btnDriveMap" Content="Connect" HorizontalAlignment="Left" Margin="337,231,0,0" VerticalAlignment="Top" Width="120" Height="38"/>
+                    <ListBox x:Name="lstDrives" HorizontalAlignment="Left" Height="186" Margin="23,28,0,0" VerticalAlignment="Top" Width="434"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Menu HorizontalAlignment="Left" Height="17.6" VerticalAlignment="Top" Width="794" Margin="0,0,-0.4,0">
+            <MenuItem x:Name="mnuFile" Header="File">
+                <MenuItem x:Name="mnuExit" Header="Exit"/>
+            </MenuItem>
+        </Menu>
+        <Label x:Name="lblCountry" Content="Country" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,32,0,0" Width="52"/>
+        <ComboBox x:Name="cmbCountry" HorizontalAlignment="Left" Margin="67,35,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblLocation" Content="Location" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="212,35,0,0" Width="56"/>
+        <ComboBox x:Name="cmbLocation" HorizontalAlignment="Left" Margin="273,35,0,0" VerticalAlignment="Top" Width="211"/>
+
+    </Grid>
+</Window>

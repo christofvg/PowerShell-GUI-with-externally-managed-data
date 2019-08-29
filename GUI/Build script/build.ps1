@@ -1,0 +1,13 @@
+.\PS2EXE\ps2exe.ps1 -inputFile '.\Bin\EndpointManager.ps1' `
+                    -outputFile '.\Bin\EndPointManager.exe' `
+                    -verbose `
+                    -iconFile '.\Icon\favicon.ico' `
+                    -company '<company name>' `
+                    -product '<application name>' `
+                    -title '<application name>' `
+                    -description '<application description>' `
+                    -copyright '<copyright message>' `
+                    -version "1.0.$(Build.BuildNumber)" `
+                    -noConsole `
+                    -noOutput `
+                    -noConfigFile

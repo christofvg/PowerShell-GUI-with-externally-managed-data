@@ -1,0 +1,39 @@
+{
+    "version": "1.0.0",
+    "data": [
+        {
+            "Country": "Belgium",
+            "Location": "Antwerp",
+            "Printers": [
+                {
+                    "DisplayName": "HP LaserJet M1522 series",
+                    "Name": "HP LaserJet M1522 series",
+                    "PrinterServer": "grooveprint.groovesoundz.be"
+                },
+                {
+                    "DisplayName": "HP OfficeJet Pro X",
+                    "Name": "HP OfficeJet Pro X",
+                    "PrinterServer": "grooveprint.groovesoundz.be"
+                }
+            ],
+            "Drives": [
+                {
+                    "DisplayName": "Music",
+                    "DriveLetter": "M",
+                    "Path": "\\\\grooveshare.groovesoundz.be\\Music"
+                },
+                {
+                    "DisplayName": "Video",
+                    "DriveLetter": "V",
+                    "Path": "\\\\grooveshare.groovesoundz.be\\Video"
+                }
+            ],
+            "PhoneNumbers": [
+                {
+                    "Name": "Service Desk",
+                    "Number": "+32 123 45 67"
+                }
+            ]
+        }
+    ]
+}
